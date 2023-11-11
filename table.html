@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблицы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="table">
+      <table>
+            <caption style="caption-side:top;">Заголовок таблицы</caption>
+            <colgroup>
+                <col style="background-color: rgb(82, 82, 255);">
+                <col span="2" style="background-color: rgb(255, 96, 96);">
+            </colgroup>
+            <tr>
+                <td>&nbsp;</td>
+                <th id="Столбец 1">Столбец 1</th>
+                <th id="Столебц 2">Столбец 2</th>
+            </tr>
+            <tr>
+                <th id="Стройка 1">Строка 1</th>
+                <td colspan="2" headers="Строка 1 Столбец 1 Столбец 2">Первая и вторая ячейки</td>
+            </tr>
+            <tr>    
+                <th id="Строка 2">Строка 2</th>
+                <td headers="Строка 2 Столбец 1">Третья ячейка</td>
+                <td rowspan="2" headers="Строка 2 Строка 3 Столбец 2">Четвертая и шестая ячейки</td>
+            </tr>
+            <tr>
+                <th id="Строка 3">Строка 4</th>
+                <td rowspan="2" headers="Строка 3 Строка 4 Столбец 1">Пятая и седьмая ячейки</td>
+            </tr>
+            <tr>
+                <th id="Строка 4">Строка 4</th>
+                <td headers="Строка 4 Столбец 2">Восьмая ячейка</td>
+            </tr>
+    </table>  
+    
+    <h3>Пример таблицы со структурой</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Заголовок1</th>
+                <th>Заголовок2</th>
+                <th>Заголовок3</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Сумма1</td>
+                <td>Сумма2</td>
+                <td>Сумма3</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Ячейка1</td>
+                <td>Ячейка2</td>
+                <td>Ячейка3</td>
+            </tr>
+            <tr>
+                <td>Ячейка1</td>
+                <td>Ячейка2</td>
+                <td>Ячейка3</td>
+            </tr>
+            <tr>
+                <td>Ячейка1</td>
+                <td>Ячейка2</td>
+                <td>Ячейка3</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
